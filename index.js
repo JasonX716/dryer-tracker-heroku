@@ -3,7 +3,12 @@ const mysql = require('mysql');
 const cors = require('cors');
 const path = require('path');
 const router = express.Router();
-const PORT = 80;
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, err => {
+    if(err) throw err;
+    console.log("%c Server running", "color: green");
+});
 
 const app = express();
 
@@ -74,13 +79,4 @@ app.delete('/delete/:id', (req, res) => {
             res.send(result);
         }
     });
-})
-
-
-
-/* app.delete() */
-
-
-app.listen(PORT, () => {
-    console.log(`server is running on port ${PORT}`)
 })
