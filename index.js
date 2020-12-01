@@ -12,7 +12,7 @@ app.listen(PORT, err => {
     console.log("%c Server running", "color: green");
 });
 
-const db = mysql.createConnection({
+const db = mysql.createPool({
     user:'b7d041e9af2185',
     host:'eu-cdbr-west-03.cleardb.net',
     password:'bc309d98',
