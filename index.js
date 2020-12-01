@@ -3,7 +3,7 @@ const mysql = require('mysql');
 const cors = require('cors');
 const path = require('path');
 const router = express.Router();
-const PORT = 3001;
+const PORT = 80;
 
 const app = express();
 
