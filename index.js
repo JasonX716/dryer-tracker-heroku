@@ -13,10 +13,10 @@ app.listen(PORT, err => {
 });
 
 const db = mysql.createConnection({
-    user:'root',
-    host:'localhost',
-    password:'password',
-    database:'dryer_tracker'
+    user:'b7d041e9af2185',
+    host:'eu-cdbr-west-03.cleardb.net',
+    password:'bc309d98',
+    database:'heroku_5acb364d76d1e35'
 });
 
 app.use(cors());
