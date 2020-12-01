@@ -4,13 +4,13 @@ const cors = require('cors');
 const path = require('path');
 const router = express.Router();
 
+const app = express();
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, err => {
     if(err) throw err;
     console.log("%c Server running", "color: green");
 });
-
-const app = express();
 
 const db = mysql.createConnection({
     user:'root',
